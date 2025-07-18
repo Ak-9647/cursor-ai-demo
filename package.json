@@ -1,0 +1,40 @@
+{
+  "name": "cursor-ai-demo",
+  "version": "1.0.0",
+  "description": "Starter project for the 'AI-Assisted Coding Like a Pro' YouTube tutorial.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "dev:debug": "nodemon --watch 'src/**/*.ts' --exec 'ts-node --inspect' src/index.ts",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "test": "npx playwright test",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "keywords": [
+    "ai",
+    "cursor",
+    "claude",
+    "typescript",
+    "express"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "@typescript-eslint/eslint-plugin": "^8.37.0",
+    "@typescript-eslint/parser": "^8.37.0",
+    "eslint": "^9.31.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
